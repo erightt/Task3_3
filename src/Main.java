@@ -33,7 +33,7 @@ public class Main{
         sc.nextLine();
         if (userMap.containsKey(searchAge)) {
             List<User> users = userMap.get(searchAge);
-            users.sort((o1, o2) -> o2.getName().compareTo(o1.getName()));
+            users.sort((o1, o2) -> o1.getName().compareTo(o2.getName()));
             System.out.println("Пользователь с возрастом " + searchAge);
             for (User user : users) {
                 System.out.println(user);
